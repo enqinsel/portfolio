@@ -34,12 +34,86 @@ export const navLinks = [
 
 export const myProjects = [
   {
+    title: 'Flalingo Kids',
+    desc: 'Çocuğunuz Profesyonel Öğretmenlerle İngilizce Öğrensin',
+    subdesc:
+      "Flalingo Kids platformunun geliştirilme sürecinde Frontend Developer olarak görev aldım. React.js, Next.js ve SCSS ile geliştirilen bu platform, çocuklara özel eğitsel içerikleri modern ve erişilebilir bir arayüzle sunar. Responsive tasarım, hızlı sayfa yükleme ve güvenli yapı ön planda tutulmuştur.",
+    href: 'https://flalingo.com/tr/kids',
+    texture: '/textures/project/project1.mp4',
+    logo: '/assets/flalingo.png',
+    logoStyle: {
+      backgroundColor: '#1C1A43',
+      border: '0.2px solid #252262',
+      boxShadow: '0px 0px 60px 0px #635BFF4D',
+    },
+    spotlight: '/assets/spotlight5.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 2,
+        name: 'Next.js',
+        path: 'assets/nextjs.svg',
+      },
+      {
+        id: 3,
+        name: 'Typescript',
+        path: '/assets/typescript.svg',
+      },
+      {
+        id: 4,
+        name: 'Sass/SCSS',
+        path: '/assets/sass.png',
+      },
+    ],
+  },
+  {
+    title: 'Hyper E-Ticaret Platformu',
+    desc: 'Epin ve e-ticaret çözümleri sunar.',
+    subdesc:
+        "Hyper Teknoloji firmasının kurumsal e-ticaret platformunun yeni arayüzü üzerine çalıştım. Frontend Developer olarak görev aldım. PHP, JavaScript ve Bootstrap kullanılarak geliştirdim. Projede, oyun içi dijital ürünlerin satışı, çoklu pazaryeri entegrasyonları, blog, sipariş ve stok yönetimi gibi modüllerin tasarımı üzerinde çalıştım.",
+    href: 'https://www.hyperteknoloji.com/',
+    texture: '/textures/project/project2.mp4',
+    logo: '/assets/hypericon.png',
+    logoStyle: {
+      backgroundColor: '#0E1F38',
+      border: '0.2px solid #0E2D58',
+      boxShadow: '0px 0px 60px 0px #2F67B64D'
+    },
+    spotlight: '/assets/spotlight4.png',
+    tags: [
+      {
+        id: 1,
+        name: 'PHP',
+        path: '/assets/php.png',
+      },
+      {
+        id: 2,
+        name: 'JavaScript',
+        path: 'assets/js.svg',
+      },
+      {
+        id: 3,
+        name: 'Bootstrap',
+        path: '/assets/bootstrap.png',
+      },
+      {
+        id: 4,
+        name: 'Figma',
+        path: '/assets/figma.svg',
+      },
+    ],
+  },
+  {
     title: 'Gerçek Zamanlı At Yarışı Oyunu',
     desc: 'Düz bir parkurda 8 farklı kulvarda koşan atların gerçek zamanlı yarışı.',
     subdesc:
       'Vue.js ile geliştirilen bu at yarışı simülasyonu, JavaScript tabanlı animasyonlar ve kontrollerle 8 kulvarda gerçek zamanlı yarış deneyimi sunar. Vite ile derlenip Firebase Hosting üzerinden yayınlanmıştır. Figma ile tasarlanan arayüz, intro, sesli anlatım, geri sayım, lider tablosu ve sonuç listesi gibi özellikler içerir.',
     href: 'https://horseracingvue.web.app/',
-    texture: '/textures/project/project1.mp4',
+    texture: '/textures/project/project3.mp4',
     logo: '/assets/project-logo1.png',
     logoStyle: {
       backgroundColor: '#2A1816',
@@ -81,7 +155,7 @@ export const myProjects = [
     subdesc:
       "Vue.js ile geliştirilen bu uygulama, Axios kullanılarak iki farklı API'den çekilen İngilizce kelimeler ve anlamlarıyla kullanıcıya kelime önerileri sunar. Kullanıcılar hesap oluşturarak kelime öğrenmeye başlayabilir, öğrendikleri kelimeleri kelime tablosuna ekleyebilir ve profil bilgilerini güncelleyebilirler.",
     href: 'https://learn-english-word.netlify.app/',
-    texture: '/textures/project/project2.mp4',
+    texture: '/textures/project/project4.mp4',
     logo: '/assets/project-logo2.png',
     logoStyle: {
       backgroundColor: '#13202F',
@@ -118,7 +192,7 @@ export const myProjects = [
     subdesc:
       'Bu proje, React.js kullanılarak geliştirilmiş interaktif bir matematik alıştırma oyunudur. Kullanıcılar dört temel matematik işlemi (toplama, çıkarma, çarpma, bölme) üzerinde pratik yapabilirler. Context API ile global durum yönetimi sağlanmıştır. CSS ile modern ve responsive bir arayüz tasarlanmıştır. Skor ve tur özellikleri mevcuttur.',
     href: 'https://flalingo-task.vercel.app/',
-    texture: '/textures/project/project3.mp4',
+    texture: '/textures/project/project5.mp4',
     logo: '/assets/project-logo3.png',
     logoStyle: {
       backgroundColor: '#60f5a1',
@@ -150,81 +224,7 @@ export const myProjects = [
         path: '/assets/react-router.svg',
       },
     ],
-  },
-  {
-    title: 'Blog ve Haber Platformu',
-    desc: 'Kullanıcılar blog yazabilir, haberleri takip edebilir.',
-    subdesc:
-      "React, React Router ve Bootstrap kullanılarak geliştirilen bu uygulama, kullanıcıların hesap oluşturup giriş yapmasını, CollectAPI üzerinden güncel haberleri görüntülemesini ve kendi blog yazılarını oluşturup yönetmesini sağlar. Axios ile API istekleri yapılır; kullanıcı bilgileri ve içerikler LocalStorage'da saklanır. Farklı cihazlarda uyumlu çalışır.",
-    href: 'https://blog-site-enqinsel.vercel.app/login',
-    texture: '/textures/project/project4.mp4',
-    logo: '/assets/project-logo4.png',
-    logoStyle: {
-      backgroundColor: '#0E1F38',
-      border: '0.2px solid #0E2D58',
-      boxShadow: '0px 0px 60px 0px #2F67B64D',
-    },
-    spotlight: '/assets/spotlight4.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'Bootstrap',
-        path: 'assets/bootstrap.png',
-      },
-      {
-        id: 3,
-        name: 'React Router',
-        path: '/assets/react-router.svg',
-      },
-      {
-        id: 4,
-        name: 'Collect Api',
-        path: '/assets/collectapi.png',
-      },
-    ],
-  },
-  {
-    title: 'Görsel Arama Uygulaması',
-    desc: 'Kelimeyle görsel aramak artık çok kolay.',
-    subdesc:
-        "React.js ile geliştirilen bu uygulama, Unsplash API üzerinden kullanıcıların anahtar kelimelerle görsel araması yapmasını sağlar. Axios ile API istekleri gerçekleştirilir ve sonuçlar responsive bir arayüzde gösterilir. Uygulama, Vite ile yapılandırılmıştır ve Netlify üzerinde barındırılmaktadır.",
-    href: 'https://unsplash-api-search.netlify.app/',
-    texture: '/textures/project/project5.mp4',
-    logo: '/assets/project-logo5.png',
-    logoStyle: {
-      backgroundColor: '#1C1A43',
-      border: '0.2px solid #252262',
-      boxShadow: '0px 0px 60px 0px #635BFF4D',
-    },
-    spotlight: '/assets/spotlight5.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'CSS',
-        path: 'assets/css.svg',
-      },
-      {
-        id: 3,
-        name: 'Axios',
-        path: '/assets/axios.png',
-      },
-      {
-        id: 4,
-        name: 'Unsplash Api',
-        path: '/assets/unsplash.svg',
-      },
-    ],
-  },
+  }
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
@@ -244,7 +244,7 @@ export const workExperiences = [
     name: 'Hyper Teknoloji',
     pos: 'Frontend Geliştirici & UI Tasarımcısı',
     duration: '08/2024 - 02/2025',
-    title: 'PHP tabanlı e-ticaret siteleri için müşteriye özel tasarımlar ve arayüz yazılımları geliştirerek, site düzenlemelerini ve kullanıcı deneyimini iyileştirdim.\n\nYetenekler: HTML, CSS, Bootstrap, JavaScript, jQuery, PHP, Figma',
+    title: 'PHP tabanlı e-ticaret siteleri için müşteriye özel tasarımlar ve arayüz yazılımları geliştirerek, site düzenlemelerini ve kullanıcı deneyimini iyileştirdim.\n\nYetenekler: PHP, JavaScript, HTML, CSS, Bootstrap, Figma',
     icon: '/assets/hyperlogo.webp',
     animation: 'victory',
   },
@@ -253,7 +253,7 @@ export const workExperiences = [
     name: 'CarrefourSA (nNarsoft Bilişim çatısı altında)',
     pos: 'Frontend Geliştirici',
     duration: '12/2023 - 05/2024',
-    title: "Global bir proje kapsamında, CarrefourSA’nın Yazar Kasa ve Jet Kasa uygulamalarında Electron.js, React.js ve React Native ile frontend geliştirmeler yaptım; çevre birimi entegrasyonları ve kullanıcı dostu çözümler sundum. \n\nYetenekler: React, React Native, Electron.js, JavaScript, Sass, SQL, Figma, Postman, Docker, Jira",
+    title: "Global bir proje kapsamında, CarrefourSA’nın Yazar Kasa ve Jet Kasa uygulamalarında Electron.js, React.js ve React Native ile frontend geliştirmeler yaptım; çevre birimi entegrasyonları ve kullanıcı dostu çözümler sundum. \n\nYetenekler: React, React Native, Electron.js, JavaScript, SCSS, SQL, Figma, Postman, Docker, Jira",
     icon: '/assets/carrefoursa.png',
     animation: 'clapping',
   },
@@ -262,7 +262,7 @@ export const workExperiences = [
     name: 'Flalingo',
     pos: 'Frontend Geliştirici',
     duration: '04/2023 - 12/2023',
-    title: "Global bir proje kapsamında, PHP tabanlı sayfa geliştirme, güncelleme ve performans iyileştirmeleri yaptım. Ayrıca, Next.js kullanarak SEO uyumlu geliştirme gerçekleştirdim ve tasarım ekibiyle iş birliği içinde çalıştım. \n\nYetenekler: CSS, Sass, React.js, Next.js, Redux, Laravel, Figma",
+    title: "Global bir proje kapsamında, PHP tabanlı sayfa geliştirme, güncelleme ve performans iyileştirmeleri yaptım. Ayrıca, Next.js kullanarak SEO uyumlu geliştirme gerçekleştirdim ve tasarım ekibiyle iş birliği içinde çalıştım. \n\nYetenekler: Next.js, React.js, Redux, Laravel, CSS, SCSS, Figma",
     icon: '/assets/flalingo.png',
     animation: 'salute',
   }
