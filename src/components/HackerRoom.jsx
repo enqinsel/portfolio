@@ -38,4 +38,4 @@ export function HackerRoom(props) {
   );
 }
 
-useGLTF.preload('/models/hacker-room.glb');
+

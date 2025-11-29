@@ -5,9 +5,11 @@ import { OrbitControls } from '@react-three/drei';
 import Developer from '../components/Developer.jsx';
 import CanvasLoader from '../components/Loading.jsx';
 import { workExperiences } from '../constants/index.js';
+import { useInView } from '../hooks/useInView.js';
 
 const WorkExperience = () => {
   const [animationName, setAnimationName] = useState('idle');
+  const { ref: canvasRef, hasBeenInView } = useInView();
 
   return (
     <section className="c-space my-20" id="work">
@@ -15,17 +17,23 @@ const WorkExperience = () => {
         <p className="head-text">İş Deneyimlerim</p>
 
         <div className="work-container">
-          <div className="work-canvas">
-            <Canvas>
-              <ambientLight intensity={7} />
-              <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-              <directionalLight position={[10, 10, 10]} intensity={1} />
-              <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
+          <div ref={canvasRef} className="work-canvas">
+            {hasBeenInView ? (
+              <Canvas>
+                <ambientLight intensity={7} />
+                <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+                <directionalLight position={[10, 10, 10]} intensity={1} />
+                <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
 
-              <Suspense fallback={<CanvasLoader />}>
-                <Developer position-y={-3} scale={3} animationName={animationName} />
-              </Suspense>
-            </Canvas>
+                <Suspense fallback={<CanvasLoader />}>
+                  <Developer position-y={-3} scale={3} animationName={animationName} />
+                </Suspense>
+              </Canvas>
+            ) : (
+              <div className="w-full h-full flex items-center justify-center">
+                <p className="text-white-600">Loading 3D model...</p>
+              </div>
+            )}
           </div>
 
           <div className="work-content">

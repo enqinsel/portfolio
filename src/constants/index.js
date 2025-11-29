@@ -74,7 +74,7 @@ export const myProjects = [
     title: 'Hyper E-Ticaret Platformu',
     desc: 'Epin ve e-ticaret çözümleri sunar.',
     subdesc:
-        "Hyper Teknoloji firmasının kurumsal e-ticaret platformunun yeni arayüzü üzerine çalıştım. Frontend Developer olarak görev aldım. PHP, JavaScript ve Bootstrap kullanılarak geliştirdim. Projede, oyun içi dijital ürünlerin satışı, çoklu pazaryeri entegrasyonları, blog, sipariş ve stok yönetimi gibi modüllerin tasarımı üzerinde çalıştım.",
+      "Hyper Teknoloji firmasının kurumsal e-ticaret platformunun yeni arayüzü üzerine çalıştım. Frontend Developer olarak görev aldım. PHP, JavaScript ve Bootstrap kullanılarak geliştirdim. Projede, oyun içi dijital ürünlerin satışı, çoklu pazaryeri entegrasyonları, blog, sipariş ve stok yönetimi gibi modüllerin tasarımı üzerinde çalıştım.",
     href: 'https://www.hyperteknoloji.com/',
     texture: '/textures/project/project2.mp4',
     logo: '/assets/hypericon.png',
@@ -241,7 +241,7 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: 'Hyper Teknoloji',
+    name: 'Hyper',
     pos: 'Frontend Geliştirici & UI Tasarımcısı',
     duration: '08/2024 - 02/2025',
     title: 'PHP tabanlı e-ticaret siteleri için müşteriye özel tasarımlar ve arayüz yazılımları geliştirerek, site düzenlemelerini ve kullanıcı deneyimini iyileştirdim.\n\nYetenekler: PHP, JavaScript, HTML, CSS, Bootstrap, Figma',

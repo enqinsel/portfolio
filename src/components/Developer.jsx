@@ -21,6 +21,12 @@ const Developer = ({ animationName = 'idle', ...props }) => {
   const { animations: clappingAnimation } = useFBX('/models/animations/clapping.fbx');
   const { animations: victoryAnimation } = useFBX('/models/animations/victory.fbx');
 
+  // Filter out Armature tracks that don't exist in the GLB model
+  idleAnimation[0].tracks = idleAnimation[0].tracks.filter(track => !track.name.includes('Armature'));
+  saluteAnimation[0].tracks = saluteAnimation[0].tracks.filter(track => !track.name.includes('Armature'));
+  clappingAnimation[0].tracks = clappingAnimation[0].tracks.filter(track => !track.name.includes('Armature'));
+  victoryAnimation[0].tracks = victoryAnimation[0].tracks.filter(track => !track.name.includes('Armature'));
+
   idleAnimation[0].name = 'idle';
   saluteAnimation[0].name = 'salute';
   clappingAnimation[0].name = 'clapping';
@@ -105,6 +111,6 @@ const Developer = ({ animationName = 'idle', ...props }) => {
   );
 };
 
-useGLTF.preload('/models/animations/developer.glb');
+
 
 export default Developer;
